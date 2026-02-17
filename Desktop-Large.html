@@ -20,7 +20,7 @@ body{
   height:100vh;
 }
 
-/* FRAME */
+
 .desktop-lg{
   width:1920px;
   height:1080px;
@@ -28,7 +28,6 @@ body{
   grid-template-columns:1fr 1fr;
 }
 
-/* LEFT */
 .hero{
   background:#565b77;
   color:#fff;
@@ -69,7 +68,7 @@ body{
   font-size:16px;
 }
 
-/* IMAGE GRID */
+
 .grid{
   display:grid;
   grid-template-columns:repeat(2,1fr);
@@ -86,7 +85,7 @@ body{
   transition:.4s ease;
 }
 
-/* stagger animation */
+
 .grid img:nth-child(1){ animation-delay:0s; }
 .grid img:nth-child(2){ animation-delay:1s; }
 .grid img:nth-child(3){ animation-delay:2s; }
@@ -97,14 +96,14 @@ body{
   box-shadow:0 18px 40px rgba(0,0,0,.35);
 }
 
-/* floating effect */
+
 @keyframes float{
   0%{ transform:translateY(0); }
   50%{ transform:translateY(-10px); }
   100%{ transform:translateY(0); }
 }
 
-/* RIGHT */
+
 .card{
   background:#faefec;
   padding:96px;
@@ -123,7 +122,7 @@ body{
   margin-bottom:26px;
 }
 
-/* FORM */
+
 .field{ margin-bottom:14px; }
 .label{ font-size:13px; color:#666; margin-bottom:6px; }
 
@@ -144,7 +143,7 @@ body{
   gap:18px;
 }
 
-/* SEGMENTED */
+
 .segmented{
   position:relative;
   display:grid;
@@ -171,7 +170,7 @@ body{
 }
 .segmented .active{ color:#333; }
 
-/* TIME */
+
 .time{
   display:grid;
   grid-template-columns:repeat(3,1fr);
@@ -186,7 +185,7 @@ body{
 }
 .time .active{ background:#565b77;color:#fff; }
 
-/* BUTTON */
+
 .btn{
   width:100%;
   height:48px;
@@ -204,7 +203,7 @@ body{
 
 <div class="desktop-lg">
 
-  <!-- LEFT -->
+
   <section class="hero">
     <div class="brand">
       <div class="logo">🐾</div> PAWTASTIC
@@ -226,7 +225,7 @@ body{
     </div>
   </section>
 
-  <!-- RIGHT -->
+ 
   <section class="card">
     <div class="form">
       <h2>We’ll take your dog for a walk. Just tell us when!</h2>
@@ -283,12 +282,12 @@ body{
 </div>
 
 <script>
-// Phone numbers only
+
 document.getElementById("phone").addEventListener("input", e=>{
   e.target.value=e.target.value.replace(/\D/g,"");
 });
 
-// Frequency toggle
+
 const slider=document.getElementById("freqSlider");
 const one=document.getElementById("one");
 const rec=document.getElementById("rec");
@@ -307,3 +306,4 @@ document.querySelectorAll(".time button").forEach(btn=>{
 
 </body>
 </html>
+
