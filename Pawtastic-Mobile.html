@@ -21,7 +21,7 @@ body {
   min-height: 100vh;
 }
 
-/* TABLET FRAME */
+
 .tablet {
   width: 820px;
   height: 598px;
@@ -32,7 +32,7 @@ body {
   background: #0f0f12;
 }
 
-/* HERO */
+
 .hero {
   background: linear-gradient(180deg, #0e1c2f, #0a1220);
   border-radius: 18px;
@@ -93,7 +93,7 @@ body {
 }
 .textarea { height:64px; resize:none; }
 
-/* SEGMENTED */
+
 .segmented {
   position:relative;
   display:grid;
@@ -114,7 +114,7 @@ body {
 }
 .segmented .active { color:#333; font-weight:600; }
 
-/* TIME */
+
 .time { display:flex; gap:6px; }
 .time button {
   flex:1; height:32px; border-radius:999px;
@@ -122,7 +122,7 @@ body {
 }
 .time .active { background:#565c74; color:#fff; }
 
-/* BUTTON */
+
 .btn {
   width:100%; height:42px; border-radius:999px;
   border:none; background:#565c74; color:#fff; font-weight:600;
@@ -134,7 +134,7 @@ body {
 
 <div class="tablet">
 
-  <!-- HERO -->
+
   <section class="hero">
     <div class="brand">
       <div class="logo">🐾</div> PAWTASTIC
@@ -152,7 +152,7 @@ body {
     </div>
   </section>
 
-  <!-- FORM -->
+ 
   <section class="card">
     <div class="form-card">
       <h2>We'll take your dog for a walk. Just tell us when!</h2>
@@ -207,12 +207,12 @@ body {
 </div>
 
 <script>
-// Phone numbers only
+
 document.getElementById("phone").addEventListener("input", e => {
   e.target.value = e.target.value.replace(/\D/g, "");
 });
 
-// Frequency toggle
+
 const slider = document.getElementById("freqSlider");
 const one = document.getElementById("one");
 const rec = document.getElementById("rec");
@@ -220,7 +220,7 @@ const rec = document.getElementById("rec");
 one.onclick = () => { slider.style.left="0"; one.classList.add("active"); rec.classList.remove("active"); };
 rec.onclick = () => { slider.style.left="50%"; rec.classList.add("active"); one.classList.remove("active"); };
 
-// Time select
+
 document.querySelectorAll(".time button").forEach(btn=>{
   btn.onclick=()=>{
     document.querySelectorAll(".time button").forEach(b=>b.classList.remove("active"));
@@ -231,3 +231,4 @@ document.querySelectorAll(".time button").forEach(btn=>{
 
 </body>
 </html>
+
